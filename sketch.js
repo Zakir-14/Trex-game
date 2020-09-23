@@ -6,12 +6,15 @@ var gameState = PLAY;
 var trex, trex_running, trex_collided;
 var ground, invisibleGround, groundImage;
 
+
 var CloudsGroup, cloudImage;
 var ObstaclesGroup, obstacle1, obstacle2, obstacle3, obstacle4, obstacle5, obstacle6;
 
-var score;
+
+var score = 0
 
 var gameOver, restart , gameOver_img , restart_img; 
+
 
 var checkPoint_sound , die_sound , jump_sound;
 
@@ -27,12 +30,15 @@ function preload(){
   
   restart_img = loadImage("restart.png");
   
+  
+  //loading sounds
   checkPoint_sound = loadSound("checkPoint.mp3");
   
   die_sound = loadSound("die.mp3");
   
   jump_sound = loadSound("jump.mp3");
   
+  //
   obstacle1 = loadImage("obstacle1.png");
   obstacle2 = loadImage("obstacle2.png");
   obstacle3 = loadImage("obstacle3.png");
